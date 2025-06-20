@@ -1,5 +1,8 @@
 body {
-  background-color: #e6f0ff; /* Light blue background */
+  background-image: url('https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   background-color: #f0f8ff;
