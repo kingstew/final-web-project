@@ -24,3 +24,24 @@ a {
   color: #007acc;
   text-decoration: underline;
 }
+.section {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.intro {
+  font-family: 'Georgia', serif;
+  color: #00264d;
+}
+
+.missions {
+  font-size: 18px;
+  color: #003366;
+}
+
+.video {
+  border: 2px solid #003366;
+  padding: 15px;
+}
