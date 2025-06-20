@@ -35,6 +35,23 @@
   <!-- Replace this link with your real Tableau embed code -->
   <iframe src="https://public.tableau.com/views/YourGraphName/Sheet1?:embed=y&:display_count=yes" 
           width="600" height="400"></iframe>
+<h2>Random Space Fact Generator</h2>
+<button onclick="showFact()">Get a Space Fact</button>
+<p id="fact"></p>
 
+<script>
+  const facts = [
+    "A day on Venus is longer than a year.",
+    "Neutron stars can spin 600 times per second.",
+    "There’s a volcano on Mars three times the height of Mount Everest.",
+    "Space is completely silent.",
+    "There may be a planet made of diamonds."
+  ];
+
+  function showFact() {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").innerText = facts[randomIndex];
+  }
+</script>
 </body>
 </html>
