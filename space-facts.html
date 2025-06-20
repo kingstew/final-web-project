@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Space Fact Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000010, #1a1a2e);
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #3f72af;
+      color: white;
+    }
+    .fact-box {
+      margin-top: 20px;
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Space Fact Generator</h1>
+  <p>Click the button to learn something cool about space!</p>
+  <button onclick="showFact()">Give me a fact</button>
+  <div class="fact-box" id="fact-box"></div>
+
+  <script>
+    const facts = [
+      "Venus is hotter than Mercury despite being farther from the Sun.",
+      "A day on Venus is longer than its year.",
+      "There’s a volcano on Mars three times the height of Mount Everest.",
+      "Neutron stars can spin 600 times per second.",
+      "The Moon is slowly drifting away from Earth."
+    ];
+
+    function showFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("fact-box").textContent = facts[randomIndex];
+    }
+  </script>
+</body>
+</html>
